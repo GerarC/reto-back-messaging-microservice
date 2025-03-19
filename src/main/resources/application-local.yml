@@ -1,0 +1,21 @@
+logging:
+    level:
+        web: trace
+        org:
+            springframework:
+                security: debug
+                web: trace
+
+server:
+    servlet:
+        context-path: ${APP_PATH:/mall}
+    port: 8097
+
+mall:
+    user:
+        base-url: localhost:8099/mall/v1
+
+
+allowed-origins:
+    http://localhost:3000/,
+    *,
